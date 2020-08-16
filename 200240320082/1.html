@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+     <title>layout</title>
+
+     <style>
+         body {
+             background: linear-gradient(white,grey);
+         }
+     </style>
+
+
+     <script src="1.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark d-flex justify-content-between">
+            <a class="navbar-brand" href="">Exampractical</a>
+            <div class="d-flex flex-row-reverse">
+                <a class="nav-link text-light" href="">Login</a>
+                <a class="nav-link text-light" href="">About us</a>
+            </div>
+        </nav>
+
+        <div class="row mt-5" style="height:100vh">
+            <div class="col-3"></div>
+            <div class="col-12 col-md-6 mt-5" >
+                  <div class="card mt-4 text-center" style="box-shadow:4px 4px 4px;">
+                      <div class="card-header bg-success text-light">Write something here</div>
+                      <div class="card-body" style="background:rgb(167, 224, 129)"><input id="status1" class="form-control" type="text"></div>
+                      <div class="card-footer " style="background:rgb(167, 224, 129)"> <button class="btn btn-success btn-block" onclick="postit()">Post</button></div>
+                  </div>  
+
+                  <div id="main" class="commentbox mt-3" >
+                      <div id="card2" class="card m-3" style="background:rgb(189, 243, 154); visibility:hidden; box-shadow:4px 4px 4px;">
+                            <div class="card-header text-center text-light bg-success">
+                                status</div>
+                            <div class="card-footer d-flex "><button class="btn btn-success btn-block m-1">Like <span>0</span></button>
+                                <input class="form-control m-1" type="text">
+                                <button class="btn btn-success btn-block m-1">Comment</button>
+                            </div>
+                            
+                      </div>
+                  </div>
+
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <nav class="navbar fixed-bottom bg-dark navbar-dark d-flex flex-column justify-content-center">
+            <div class="text-center text-muted">copyright to Exampractical</div>
+            <div><a class="text-light" href="#">Exampractical.com</a></div>
+
+        </nav>
+
+    </div>
+</body>
+</html>
